@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REENE Medical Diagnostics Center - Reene Medical Testing Facility</title>
+    <meta name="description" content="REENE Medical Diagnostics Center offers comprehensive medical testing services 24/7. Professional laboratory services in Onitsha with expert staff and modern equipment.">
+    <meta name="keywords" content="medical diagnostics, laboratory tests, medical center, Onitsha, medical testing, health screening">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- Formspree for form handling -->
+    <script>
+        emailjs.init("YOUR_EMAILJS_PUBLIC_KEY"); // Replace with your EmailJS public key
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="https://via.placeholder.com/50x50/2563eb/ffffff?text=R" alt="REENE Logo">
+                <span>REENE MEDICAL</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About Us</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                <li><a href="#consultation" class="nav-link">Online Consultation</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="container">
+                <h1 class="hero-title">Reene Medical Diagnostics Center</h1>
+                <p class="hero-subtitle">Comprehensive medical testing services with cutting-edge technology and expert care</p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn btn-primary">Our Services</a>
+                    <a href="#consultation" class="btn btn-secondary">Online Consultation</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Medical Laboratory">
+        </div>
+    </section>
+
+    <!-- Quick Info Bar -->
+    <section class="quick-info">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <h3>24/7 Emergency</h3>
+                    <p>Available round the clock except Sundays</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-microscope"></i>
+                    <h3>Advanced Testing</h3>
+                    <p>State-of-the-art laboratory equipment</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-user-md"></i>
+                    <h3>Expert Staff</h3>
+                    <p>Qualified medical professionals</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Certified Results</h3>
+                    <p>Accurate and reliable test results</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About REENE Medical Diagnostics Center</h2>
+                <p>Leading the way in medical diagnostics with excellence and precision</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Excellence in Medical Diagnostics</h3>
+                    <p>REENE Medical Diagnostics Center stands as a beacon of excellence in the medical diagnostics field. Under the leadership of Prof. Dr. Ihim Augustine Chinedu and managed by Mrs. Ihim Maureen Chinenye, we provide comprehensive medical testing services with unmatched precision and care.</p>
+                    <p>Our facility is equipped with cutting-edge technology and staffed by highly qualified professionals dedicated to delivering accurate results that healthcare providers can trust.</p>
+                    
+                    <div class="leadership">
+                        <div class="leader">
+                            <h4><i class="fas fa-user-tie"></i> Dr. Ihim Augustine Chinedu</h4>
+                            <p>Chief Executive Officer</p>
+                        </div>
+                        <div class="leader">
+                            <h4><i class="fas fa-users"></i> Mrs. Ihim Maureen Chinenye</h4>
+                            <p>Human Resources Manager</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1931&q=80" alt="Medical Laboratory Interior">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>We run every test you can think of with precision and care</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-vial"></i>
+                    </div>
+                    <h3>Blood Tests</h3>
+                    <p>Complete blood count, chemistry panels, and specialized blood analysis</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-dna"></i>
+                    </div>
+                    <h3>Genetic Testing</h3>
+                    <p>Advanced genetic analysis and hereditary disease screening</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-x-ray"></i>
+                    </div>
+                    <h3>Imaging Services</h3>
+                    <p>X-rays, ultrasounds, and other diagnostic imaging procedures</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Cardiac Tests</h3>
+                    <p>ECG, stress tests, and comprehensive cardiac diagnostics</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-virus"></i>
+                    </div>
+                    <h3>Infectious Disease</h3>
+                    <p>Pathogen detection and infectious disease screening</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>Specialized Tests</h3>
+                    <p>Hormone levels, toxicology, and specialized diagnostic tests</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <div class="section-header">
+                <h2>Patient Reviews</h2>
+                <p>What our patients say about our services</p>
+            </div>
+            
+            <div class="review-stats">
+                <div class="overall-rating">
+                    <span class="rating-number" id="overallRating">4.8</span>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="total-reviews" id="totalReviews">(127 reviews)</span>
+                </div>
+            </div>
+
+            <div class="reviews-container" id="reviewsContainer">
+                <!-- Reviews will be loaded from database/API -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <span class="reviewer-name">ch*****@gmail.com</span>
+                            <div class="review-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <span class="review-date">2 days ago</span>
+                    </div>
+                    <p class="review-text">Excellent service! The staff was professional and the results were delivered quickly. Highly recommend REENE Medical for any diagnostic needs.</p>
+                    <div class="review-actions">
+                        <button class="helpful-btn" data-review-id="1"><i class="fas fa-thumbs-up"></i> Helpful (12)</button>
+                        <button class="reply-btn"><i class="fas fa-reply"></i> Reply</button>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <span class="reviewer-name">em*****@gmail.com</span>
+                            <div class="review-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <span class="review-date">1 week ago</span>
+                    </div>
+                    <p class="review-text">Very clean facility with modern equipment. The doctors are knowledgeable and the entire process was smooth from start to finish.</p>
+                    <div class="review-actions">
+                        <button class="helpful-btn" data-review-id="2"><i class="fas fa-thumbs-up"></i> Helpful (8)</button>
+                        <button class="reply-btn"><i class="fas fa-reply"></i> Reply</button>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <span class="reviewer-name">ad*****@gmail.com</span>
+                            <div class="review-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <span class="review-date">2 weeks ago</span>
+                    </div>
+                    <p class="review-text">Great diagnostic center with comprehensive services. The only minor issue was the waiting time during peak hours, but overall very satisfied.</p>
+                    <div class="review-actions">
+                        <button class="helpful-btn" data-review-id="3"><i class="fas fa-thumbs-up"></i> Helpful (15)</button>
+                        <button class="reply-btn"><i class="fas fa-reply"></i> Reply</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add Review Form -->
+            <div class="add-review">
+                <h3>Share Your Experience</h3>
+                <form class="review-form" id="reviewForm" action="https://formspree.io/f/xkgqnzaz" method="POST">
+                    <input type="hidden" name="_subject" value="New Review - REENE Medical">
+                    <input type="hidden" name="_next" value="thank-you.html">
+                    <input type="hidden" name="_replyto" value="">
+                    
+                    <div class="rating-input">
+                        <label>Your Rating:</label>
+                        <div class="stars-input">
+                            <i class="far fa-star" data-rating="1"></i>
+                            <i class="far fa-star" data-rating="2"></i>
+                            <i class="far fa-star" data-rating="3"></i>
+                            <i class="far fa-star" data-rating="4"></i>
+                            <i class="far fa-star" data-rating="5"></i>
+                        </div>
+                        <input type="hidden" name="rating" id="ratingValue" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your email address" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="review" placeholder="Share your experience..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Review</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Online Consultation Section -->
+    <section id="consultation" class="consultation">
+        <div class="container">
+            <div class="section-header">
+                <h2>AI Online Consultation</h2>
+                <p>Get instant medical guidance from our AI assistant</p>
+            </div>
+            <div class="consultation-container">
+                <div class="chat-container">
+                    <div class="chat-header">
+                        <div class="chat-avatar">
+                            <img src="https://via.placeholder.com/40x40/2563eb/ffffff?text=AI" alt="AI Assistant">
+                        </div>
+                        <div class="chat-info">
+                            <h4>Medical AI Assistant</h4>
+                            <span class="status online">Online</span>
+                        </div>
+                    </div>
+                    <div class="chat-messages" id="chatMessages">
+                        <div class="message bot-message">
+                            <div class="message-content">
+                                Hello! I'm your AI medical assistant. I can help you with general health questions and guide you on when to seek professional medical care. How can I assist you today?
+                            </div>
+                            <div class="message-time">Just now</div>
+                        </div>
+                    </div>
+                    <div class="chat-input">
+                        <input type="text" id="chatInput" placeholder="Type your medical question here...">
+                        <button id="sendMessage" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="consultation-info">
+                    <h3>Important Notice</h3>
+                    <div class="info-box">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <p>This AI assistant provides general health information only and should not replace professional medical advice, diagnosis, or treatment.</p>
+                    </div>
+                    <div class="consultation-features">
+                        <h4>What I can help with:</h4>
+                        <ul>
+                            <li>General health questions</li>
+                            <li>Symptom information</li>
+                            <li>Health screening guidance</li>
+                            <li>Test preparation tips</li>
+                            <li>When to seek medical care</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>Get in touch with us for all your medical diagnostic needs</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>50 Nwaziki, Awada Obosi, Onitsha, Idemili North</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone Numbers</h4>
+                            <p>+2348035985883</p>
+                            <p>+2348035985878</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>reenelab@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Operating Hours</h4>
+                            <p>24/7 for emergencies</p>
+                            <p>(Except Sundays)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <form id="contactForm" action="https://formspree.io/f/mjkavodz" method="POST">
+                        <input type="hidden" name="_subject" value="New Contact Form Submission - REENE Medical">
+                        <input type="hidden" name="_next" value="thank-you.html">
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" placeholder="Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <select name="service" required>
+                                <option value="">Select Service</option>
+                                <option value="blood-test">Blood Tests</option>
+                                <option value="genetic">Genetic Testing</option>
+                                <option value="imaging">Imaging Services</option>
+                                <option value="cardiac">Cardiac Tests</option>
+                                <option value="infectious">Infectious Disease</option>
+                                <option value="specialized">Specialized Tests</option>
+                                <option value="consultation">Consultation</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="https://via.placeholder.com/50x50/2563eb/ffffff?text=R" alt="REENE Logo">
+                        <span>REENE MEDICAL</span>
+                    </div>
+                    <p>Leading medical diagnostics center providing comprehensive testing services with excellence and precision.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Blood Tests</a></li>
+                        <li><a href="#services">Genetic Testing</a></li>
+                        <li><a href="#services">Imaging Services</a></li>
+                        <li><a href="#services">Cardiac Tests</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-phone"></i> +2348035985883</p>
+                        <p><i class="fas fa-envelope"></i> reenelab@gmail.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 50 Nwaziki, Awada Obosi, Onitsha</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 REENE Medical Diagnostics Center. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
